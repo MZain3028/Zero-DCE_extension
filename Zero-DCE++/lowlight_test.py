@@ -49,7 +49,7 @@ if __name__ == '__main__':
         file_list = os.listdir(filePath)
         sum_time = 0
         for file_name in file_list:
-            test_list = glob.glob(filePath + file_name + "/*")
+            test_list = glob.glob(filePath + '/' + file_name + "/*")
             for image in test_list:
                 print(image)
                 sum_time = sum_time + lowlight(image)
