@@ -45,7 +45,7 @@ def lowlight(image_path):
 
 if __name__ == '__main__':
     with torch.no_grad():
-        filePath = 'data/test_data/'   
+        filePath = '/content/Zero-DCE_extension/Zero-DCE++/data/test_data'   
         file_list = os.listdir(filePath)
         sum_time = 0
         for file_name in file_list:
